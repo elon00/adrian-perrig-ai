@@ -1,0 +1,51 @@
+{
+  "name": "adrian-perrig-ai-mcp",
+  "version": "1.0.0",
+  "description": "Adrian Perrig AI Model Context Protocol Server for Autonomous Next-Generation Internet Architecture, SCION Path-Aware Routing, IoT Sensor Security & Trusted Computing Protocol",
+  "tools": [
+    {
+      "name": "audit_scion_path_verification",
+      "description": "Verify cryptographic path authorization in SCION border routers to prevent BGP hijacking and guarantee inter-domain packet delivery routes",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "isolation_domain": {
+            "type": "string"
+          },
+          "path_interface": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "isolation_domain"
+        ]
+      }
+    },
+    {
+      "name": "disburse_secure_internet_grant",
+      "description": "Trigger automated micro-escrow releases for SCION gateway deployments, hardware-rooted attestation modules, and resilient inter-domain routing protocols",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "recipient": {
+            "type": "string"
+          },
+          "amount_wei": {
+            "type": "string"
+          },
+          "proof_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "recipient",
+          "amount_wei"
+        ]
+      }
+    }
+  ]
+}
